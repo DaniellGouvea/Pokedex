@@ -24,7 +24,8 @@ function convertPokeApiDetailtoPokemon(pokeDetail) {
       pokemon.type = type
 
       pokemon.photo = pokeDetail.sprites.other['official-artwork'].front_default
-
+      pokemon.height = pokeDetail.height
+      pokemon.weight = pokeDetail.weight
 
       return pokemon
 }
